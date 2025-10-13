@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Project 2-8: Bank Transaction Confirmation Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+     <h1>Bank Transaction Confirmation</h1>
+    <p>
+        <label for="routing"> Enter your 9-digit bank routing number:</label>
+    <input id="routing" type="text" maxlength="9" inputmode="numeric" pattern="[0-9]{9}" />
+  </p>
+       <p> 
+        <label for="type">Select type of transaction:</label>
+        <select id="type">
+            <option value="">-- choose one --</option>
+            <option value="Treasury check">Treasury check</option>
+            <option value="Money order">Money order</option>
+            <option value="Savings bond">Savings bond</option>
+            <option value="Local deposit">Local deposit</option>
+        </select>
+    </p>
+    <p>
+    <label for="location">Select transaction location:</label>
+    <select id="location">
+      <option value="">-- choose one --</option>
+      <option value="Cleveland, OH">Cleveland, OH</option>
+      <option value="Peoria, IL">Peoria, IL</option>
+      <option value="Chicago, IL">Chicago, IL</option>
+    </select>
+  </p>
+     <button id="submit" type="button">Submit Form</button>
+    <button id="reset" type="button" hidden>Start Over</button>
+    <div id="output" aria-live="polite"></div>
+    <hr />
+    <a href="./flowchart.pdf">View my flowchart</a>
+<script src="output.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
