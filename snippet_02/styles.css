@@ -1,0 +1,52 @@
+/* References (learning only; code is my own):
+   - MDN font-family, margin, :hover, :focus-visible
+   - W3C CSS Validator
+*/
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+               "Noto Color Emoji", sans-serif;
+  line-height: 1.5;
+}
+body { margin: 0; padding: 24px; }
+
+
+p { width: min(65ch, 90%); margin: 16px auto; }
+
+
+h1, h2, h3, h4, figure, a { margin-block: 20px; }
+h1 { margin-block: 0 16px; }
+
+
+.text-link {
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.text-link:hover {
+  color: darkred;                 
+  text-decoration-thickness: 2px;
+}
+.text-link:focus,
+.text-link:focus-visible {
+  outline: 3px solid blueviolet;
+  outline-offset: 2px;
+}
+
+
+.img-link { display: inline-block; border-radius: 8px; }
+.img-link img { display: block; transition: transform .16s ease, box-shadow .16s ease; }
+@media (prefers-reduced-motion: reduce) { .img-link img { transition: none; } }
+.img-link:hover img { transform: scale(1.05); box-shadow: 0 4px 16px rgba(0,0,0,.15); }
+.img-link:focus,
+.img-link:focus-visible {
+  outline: 3px solid #ffa500; outline-offset: 4px; border-radius: 10px;
+}
+
+figure { width: min(70ch, 95%); margin: 16px auto; }
+figcaption { margin-top: 8px; font-size: .95rem; color: #444; }
