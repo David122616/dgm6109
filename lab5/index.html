@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chenkun Zhao Lab #5 - Fall 2023</title>
+    <script src="libraries/d3.min.js"></script>
+    <script src="libraries/polygon.js"></script>
+    <script src="elements/panda.js"></script>
+
+
+ <!-- Include classmate scripts here. Put them in directory "elements" in your project -->
+    <script src="elements/butterfly.js"></script>
+    <script src="elements/ladybug.js"></script>
+    <script src="elements/rooster.js"></script>
+    </head>
+
+<body>
+    <!-- Change this list to include your drawing and those of your classmates -->
+    <p>Select the first element for your drawing:<select id="choice1">
+        <option value="panda">Panda</option>
+        <option value="butterfly">butterfly</option>
+        <option value="ladybug">ladybug</option>
+        <option value="rooster">rooster</option>
+    </select></p>
+    <p>Position your first element: x:<input type="number" id="x1" value="100">, y:<input type="number" id="y1" value="300"></p>
+
+    <!-- Change this list to include your drawing and those of your classmates -->
+    <p>Select the second element for your drawing:<select id="choice2">
+        <option value="panda">Panda</option>
+        <option value="butterfly">butterfly</option>
+        <option value="ladybug">ladybug</option>
+        <option value="rooster">rooster</option>
+    </select></p>
+    <p>Position your second element: x:<input type="number" id="x2" value="300">, y:<input type="number" id="y2" value="300"></p>
+    <p>Show origin points: <select id="origins">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select></p>
+    <button id="action">Draw!</button>
+    <div id="canvas"></div>
+    <label for="pandaMode">Panda mode:</label>
+    
+<select id="pandaMode">
+  <option value="normal">Normal</option>
+  <option value="mask">Mask</option>
+  <label for="ladybugHead">Ladybug head:</label>
+  </select>
+
+<select id="ladybugHead">
+  <option value="normal">normal</option>
+  <option value="after">after</option>
+</select>
+
+<label for="roosterMode">Rooster:</label>
+<select id="roosterMode">
+  <option value="">still</option>
+  <option value="flap">flap</option>
+</select>
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
