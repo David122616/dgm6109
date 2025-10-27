@@ -7,8 +7,8 @@ let MydailyMood = [
         SleepTime: "11:00PM",
         WakeUpTime: "10:00AM",
         SleepHours:"11 Hrs",
-        SleepQuality:"10", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"0",//6 hrs before bedtime
+        SleepQuality: 10 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 0 ,//6 hrs before bedtime
         mood:{morningMood:5,AftermoonEnergy:4,EveningEnergy:2},//Mood(1-5)1=bad 5=best
         notes: "I have classes at night so feel tired"
 
@@ -19,8 +19,8 @@ let MydailyMood = [
         SleepTime: "1:00AM",
         WakeUpTime: "10:00AM",
         SleepHours:"9 Hrs",
-        SleepQuality:"7", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"1",//6 hrs before bedtime
+        SleepQuality: 7 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 1 ,//6 hrs before bedtime
         mood:{morningMood:4,AftermoonEnergy:5,EveningEnergy:5},//Mood(1-5)1=bad 5=best
         notes: "Girlfriend's birthday, go on a date"
     },
@@ -30,8 +30,8 @@ let MydailyMood = [
         SleepTime: "12:00AM",
         WakeUpTime: "10:00AM",
         SleepHours:"10 Hrs",
-        SleepQuality:"10", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"1",//6 hrs before bedtime
+        SleepQuality: 10 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 1 ,//6 hrs before bedtime
         mood:{morningMood:4,AftermoonEnergy:3,EveningEnergy:4},//Mood(1-5)1=bad 5=best
     },
     //2025-10-8
@@ -40,8 +40,8 @@ let MydailyMood = [
         SleepTime: "11:00PM",
         WakeUpTime: "10:00AM",
         SleepHours:"11 Hrs",
-        SleepQuality:"9", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"3",//6 hrs before bedtime
+        SleepQuality: 9 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 3 ,//6 hrs before bedtime
         mood:{morningMood:4,AftermoonEnergy:5,EveningEnergy:5},//Mood(1-5)1=bad 5=best
         notes: "I went to the gym before going to bed"
     },
@@ -51,8 +51,8 @@ let MydailyMood = [
         SleepTime: "10:00PM",
         WakeUpTime: "8:00AM",
         SleepHours:"10 Hrs",
-        SleepQuality:"5", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"0",//6 hrs before bedtime
+        SleepQuality: 5 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 0 ,//6 hrs before bedtime
         mood:{morningMood:2,AftermoonEnergy:3,EveningEnergy:2},//Mood(1-5)1=bad 5=best
         notes: "I slept in a bad position and got a stiff neck"
     },
@@ -62,8 +62,8 @@ let MydailyMood = [
         SleepTime: "2:00AM",
         WakeUpTime: "8:00AM",
         SleepHours:"6 Hrs",
-        SleepQuality:"3", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"1",//6 hrs before bedtime
+        SleepQuality: 3 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 1 ,//6 hrs before bedtime
         mood:{morningMood:2,AftermoonEnergy:2,EveningEnergy:2},//Mood(1-5)1=bad 5=best
         notes: "My neck hasn't recovered yet."
     },
@@ -73,8 +73,8 @@ let MydailyMood = [
         SleepTime: "11:00PM",
         WakeUpTime: "9:00AM",
         SleepHours:"10 Hrs",
-        SleepQuality:"9", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"0",//6 hrs before bedtime
+        SleepQuality: 9 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 0 ,//6 hrs before bedtime
         mood:{morningMood:4,AftermoonEnergy:3,EveningEnergy:4},//Mood(1-5)1=bad 5=best
     },
     //2025-10-15
@@ -83,8 +83,8 @@ let MydailyMood = [
         SleepTime: "12:00AM",
         WakeUpTime: "10:00AM",
         SleepHours:"10 Hrs",
-        SleepQuality:"9", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"2",//6 hrs before bedtime
+        SleepQuality: 9 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 2 ,//6 hrs before bedtime
         mood:{morningMood:5,AftermoonEnergy:4,EveningEnergy:4},//Mood(1-5)1=bad 5=best
         notes:"I went to the gym before going to bed"
     },
@@ -94,8 +94,8 @@ let MydailyMood = [
         SleepTime: "11:00PM",
         WakeUpTime: "9:00AM",
         SleepHours:"10 Hrs",
-        SleepQuality:"10", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"0",//6 hrs before bedtime
+        SleepQuality: 10 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 0 ,//6 hrs before bedtime
         mood:{morningMood:5,AftermoonEnergy:5,EveningEnergy:3},//Mood(1-5)1=bad 5=best
     },
     //2025-10-18
@@ -104,8 +104,8 @@ let MydailyMood = [
         SleepTime: "2:00AM",
         WakeUpTime: "12:00PM",
         SleepHours:"12 Hrs",
-        SleepQuality:"5", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"1",//6 hrs before bedtime
+        SleepQuality: 5 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 1 ,//6 hrs before bedtime
         mood:{morningMood:2,AftermoonEnergy:3,EveningEnergy:3},//Mood(1-5)1=bad 5=best
         notes:"Go to the party and drunk"
     },
@@ -115,8 +115,8 @@ let MydailyMood = [
         SleepTime: "11:00PM",
         WakeUpTime: "10:00AM",
         SleepHours:"10 Hrs",
-        SleepQuality:"9", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"0",//6 hrs before bedtime
+        SleepQuality: 9 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 0 ,//6 hrs before bedtime
         mood:{morningMood:4,AftermoonEnergy:3,EveningEnergy:3},//Mood(1-5)1=bad 5=best
     },
     //2025-10-22
@@ -125,8 +125,8 @@ let MydailyMood = [
         SleepTime: "10:00PM",
         WakeUpTime: "10:00AM",
         SleepHours:"10 Hrs",
-        SleepQuality:"5", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"1",//6 hrs before bedtime
+        SleepQuality: 5 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 1 ,//6 hrs before bedtime
         mood:{morningMood:3,AftermoonEnergy:2,EveningEnergy:3},//Mood(1-5)1=bad 5=best
         notes:"Woke up at 2:00 AM and fell asleep again at 3:00 AM; felt anxious about homework grades."
     },
@@ -136,8 +136,8 @@ let MydailyMood = [
         SleepTime: "1:00AM",
         WakeUpTime: "7:00AM",
         SleepHours:"7 Hrs",
-        SleepQuality:"5", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"2",//6 hrs before bedtime
+        SleepQuality: 5 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 2 ,//6 hrs before bedtime
         mood:{morningMood:2,AftermoonEnergy:2,EveningEnergy:2},//Mood(1-5)1=bad 5=best
     },
     //2025-10-24
@@ -146,8 +146,8 @@ let MydailyMood = [
         SleepTime: "12:00AM",
         WakeUpTime: "12:00PM",
         SleepHours:"12 Hrs",
-        SleepQuality:"10", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"0",//6 hrs before bedtime
+        SleepQuality: 10 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 0 ,//6 hrs before bedtime
         mood:{morningMood:5,AftermoonEnergy:5,EveningEnergy:5},//Mood(1-5)1=bad 5=best
         },
         //2025-10-26
@@ -156,8 +156,8 @@ let MydailyMood = [
         SleepTime: "2:00AM",
         WakeUpTime: "11:00AM",
         SleepHours:"9 Hrs",
-        SleepQuality:"6", //Sleepquality (1-10) 1=bad 10=best
-        EnergyDrink:"2",//6 hrs before bedtime
+        SleepQuality: 6 , //Sleepquality (1-10) 1=bad 10=best
+        EnergyDrink: 2 ,//6 hrs before bedtime
         mood:{morningMood:3,AftermoonEnergy:3,EveningEnergy:3},//Mood(1-5)1=bad 5=best
         },
 
