@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+figcaption {
+  font-style: oblique;
+}
+
+a {
+  color: rgb(255, 0, 13);
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+a:hover, 
+a:focus {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-add-gutters {
+  gap: 0.5rem 1rem;
+}
+
+/*Desktop layout（1024px）*/
+@media (min-width: 64rem) {
+  .grid.four-column,
+  .grid.two-column {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+  }
+}
+
+/* large screen layout(1920px)*/
+@media (min-width: 120rem) {
+  .grid.four-column {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
