@@ -1,0 +1,254 @@
+[{
+        "month": "Sep",
+        "date": "25",
+        "SleepHours": 11,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":10
+    },
+    {
+        "month": "Oct",
+        "date": "4",
+        "SleepHours": 9,
+        "MorningMood":4,
+        "EnergyDrink":1,
+        "SleepQuality":7
+    },
+    {
+        "month": "Oct",
+        "date": "5",
+        "SleepHours": 10,
+        "MorningMood":4,
+        "EnergyDrink":1,
+        "SleepQuality":10
+    },
+    {
+        "month": "Oct",
+        "date": "8",
+        "SleepHours": 11,
+        "MorningMood":4,
+        "EnergyDrink":3,
+        "SleepQuality":9
+    },
+    {
+        "month": "Oct",
+        "date": "10",
+        "SleepHours": 10,
+        "MorningMood":2,
+        "EnergyDrink":0,
+        "SleepQuality":5
+    },
+    {
+        "month": "Oct",
+        "date": "11",
+        "SleepHours": 6,
+        "MorningMood":2,
+        "EnergyDrink":1,
+        "SleepQuality":3
+    },
+    {
+        "month": "Oct",
+        "date": "13",
+        "SleepHours": 10,
+        "MorningMood":4,
+        "EnergyDrink":0,
+        "SleepQuality":9
+    },
+    {
+        "month": "Oct",
+        "date": "15",
+        "SleepHours": 10,
+        "MorningMood":5,
+        "EnergyDrink":2,
+        "SleepQuality":9
+    },
+    {
+        "month": "Oct",
+        "date": "16",
+        "SleepHours": 10,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":10
+    },
+    {
+       "month": "Oct",
+        "date": "18",
+        "SleepHours": 12,
+        "MorningMood":2,
+        "EnergyDrink":1,
+        "SleepQuality":5
+    },
+    {
+        "month": "Oct",
+        "date": "20",
+        "SleepHours": 10,
+        "MorningMood":2,
+        "EnergyDrink":0,
+        "SleepQuality":9
+    },
+    {
+        "month": "Oct",
+        "date": "22",
+        "SleepHours": 12,
+        "MorningMood":3,
+        "EnergyDrink":1,
+        "SleepQuality":5
+    },
+    {
+        "month": "Oct",
+        "date": "23",
+        "SleepHours": 7,
+        "MorningMood":2,
+        "EnergyDrink":2,
+        "SleepQuality":5
+    },
+    {
+        "month": "Sep",
+        "date": "24",
+        "SleepHours": 12,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":10
+    },
+    {
+       "month": "Oct",
+        "date": "26",
+        "SleepHours": 9,
+        "MorningMood":3,
+        "EnergyDrink":2,
+        "SleepQuality":6
+    },
+    {
+        "month": "Oct",
+        "date": "27",
+        "SleepHours": 9,
+        "MorningMood":4,
+        "EnergyDrink":1,
+        "SleepQuality":5
+    },
+    {
+       "month": "Oct",
+        "date": "28",
+        "SleepHours": 8,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":8
+    },
+    {
+       "month": "Oct",
+        "date": "29",
+        "SleepHours": 12,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":9
+    },
+    {
+       "month": "Nov",
+        "date": "2",
+        "SleepHours": 7,
+        "MorningMood":3,
+        "EnergyDrink":3,
+        "SleepQuality":4
+    },
+    {
+        "month": "Nov",
+        "date": "12",
+        "SleepHours": 7,
+        "MorningMood":2,
+        "EnergyDrink":3,
+        "SleepQuality":3
+    },
+    {
+       "month": "Nov",
+        "date": "13",
+        "SleepHours": 9,
+        "MorningMood":2,
+        "EnergyDrink":2,
+        "SleepQuality":6
+    },
+    {
+        "month": "Nov",
+        "date": "14",
+        "SleepHours": 9,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":9
+    },
+    {
+        "month": "Nov",
+        "date": "17",
+        "SleepHours": 6,
+        "MorningMood":2,
+        "EnergyDrink":3,
+        "SleepQuality":2
+    },
+    {
+        "month": "Nov",
+        "date": "18",
+        "SleepHours": 12,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":10
+    },
+    {
+       "month": "Nov",
+        "date": "20",
+        "SleepHours": 8,
+        "MorningMood":1,
+        "EnergyDrink":3,
+        "SleepQuality":1
+    }, {
+        "month": "Nov",
+        "date": "24",
+        "SleepHours": 11,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":9
+    }, {
+        "month": "Nov",
+        "date": "25",
+        "SleepHours": 12,
+        "MorningMood":3,
+        "EnergyDrink":1,
+        "SleepQuality":6
+    }, {
+        "month": "Nov",
+        "date": "28",
+        "SleepHours": 8,
+        "MorningMood":2,
+        "EnergyDrink":2,
+        "SleepQuality":4
+    },
+    {
+       "month": "Nov",
+        "date": "29",
+        "SleepHours": 10,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":9
+    },
+    {
+       "month": "Nov",
+        "date": "30",
+        "SleepHours": 8,
+        "MorningMood":2,
+        "EnergyDrink":1,
+        "SleepQuality":4
+    },
+    {
+       "month": "Dec",
+        "date": "1",
+        "SleepHours": 12,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":10
+    },
+    {
+        "month": "Dec",
+        "date": "2",
+        "SleepHours": 11,
+        "MorningMood":5,
+        "EnergyDrink":0,
+        "SleepQuality":9
+    }
+]

@@ -1,0 +1,47 @@
+.axisLabel {
+    font-family:fantasy;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.keyTitle {
+    text-decoration: underline;
+}
+
+
+body {
+            background-color: rgb(196, 239, 144);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+#container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+h1 {
+            text-align: center;
+            color: #333;
+        }
+.hypothesis {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            margin: 20px 0 10px 0;
+        }
+.explanation {
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+.explanation {
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 30px;
+    max-width: 850px;
+}
+
+#canvas svg {
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
