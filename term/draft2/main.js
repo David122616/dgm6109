@@ -185,6 +185,17 @@ for (let i = moodMin; i<=moodMax; i++){
 let sizeKeyX = svgWidth - marginRight + 20;
 let sizeKeyY = marginTop;
 
+// Background box for Size Legend
+svg.append("rect")
+    .attr("x", sizeKeyX - 10)
+    .attr("y", sizeKeyY - 10)
+    .attr("width", 180)
+    .attr("height", 160)
+    .attr("fill", "#94d8e6")
+    .attr("opacity", 0.6)
+    .attr("stroke", "black")
+    .attr("rx", 10);
+    
 // Add the title for the size legend (Sleep Quality).
 svg.append("text")
     .attr("class", "keyTitle")
@@ -193,11 +204,14 @@ svg.append("text")
     .attr("text-anchor", "start")
     .attr("font-weight", "bold")
     .attr("font-family", "fantasy")
+    .attr("fill", "black")
     .text("Sleep Quality (1-10)")
+
 
     // Example values and corresponding labels used in the size legend for Sleep Quality.
     let sizeKeyValues = [3, 6, 9];// Representative sleep quality values
     let sizeKeyLabels = ["1-4", "5-7", "8-10"];// Grouped ranges shown in the legend
+
 
 // Loop through each legend value and compute the vertical position for each row.
 // yPosition offsets each circle downward so the legend items do not overlap.
@@ -205,6 +219,7 @@ for (let i = 0; i < sizeKeyValues.length; i++) {
     let currentValue = sizeKeyValues[i];
     
     let yPosition = sizeKeyY + 30 + (i * 40);
+
 
 // Draw a legend circle whose radius represents a sample Sleep Quality value.
 svg.append("circle")
@@ -222,13 +237,27 @@ svg.append("text")
         .attr("text-anchor", "start")
         .attr("dominant-baseline", "middle")
         .attr("font-family", "fantasy")
+        
         .text(sizeKeyLabels[i]);
     
+        
 }
 
 // Position of the color legend (Energy Drink), placed below the size legend.
 let colorKeyX = svgWidth - marginRight + 20;// align horizontally with size legend
 let colorKeyY = sizeKeyY + 160;// vertical offset to appear beneath it
+
+// Background box for Color Legend
+svg.append("rect")
+    .attr("x", colorKeyX - 10)
+    .attr("y", colorKeyY - 10)
+    .attr("width", 160)
+    .attr("height", 150)
+    .attr("fill", "#94d8e6")
+    .attr("opacity", 0.6)
+    .attr("stroke", "black")
+    .attr("rx", 10);
+
 
 // Add the title for the color legend (Energy Drink).
 svg.append("text")
