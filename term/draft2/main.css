@@ -5,7 +5,7 @@
 }
 
 .keyTitle {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -25,18 +25,18 @@ h1 {
 .hypothesis {
             font-size: 16px;
             font-weight: bold;
-            color: #555;
+            color: #000000;
             margin: 20px 0 10px 0;
         }
 .explanation {
             line-height: 1.6;
-            color: #666;
+            color: #000000;
             margin-bottom: 30px;
         }
         
 .explanation {
     line-height: 1.7;
-    color: #444;
+    color: #000000;
     margin-bottom: 30px;
     max-width: 850px;
 }
@@ -45,4 +45,5 @@ h1 {
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     border-radius: 5px;
     background-color: #94d8e6;
+    padding-bottom: 60px;
 }
