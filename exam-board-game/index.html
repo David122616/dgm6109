@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EXAM AI Board Game</title>
+  <link rel="stylesheet" href="styles.css?v=english-only-1">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">▤</span>
+        <strong>EXAM</strong>
+      </div>
+      <div class="top-stat">
+        <span>Room</span>
+        <strong>7GHT2</strong>
+      </div>
+      <div class="top-stat">
+        <span>Round</span>
+        <strong id="roundLabel">1</strong>
+      </div>
+      <div class="top-stat">
+        <span>Turn</span>
+        <strong id="turnLabel">You</strong>
+      </div>
+      <div class="top-actions">
+        <button id="musicBtn" class="ghost music-button" type="button" aria-pressed="false">Play Music</button>
+        <button id="tutorialBtn" class="ghost" type="button">Tutorial</button>
+        <button id="newGameBtn" class="ghost danger" type="button">New Game</button>
+      </div>
+    </header>
+
+    <section class="table" aria-label="EXAM board game table">
+      <div id="players" class="players"></div>
+
+      <section class="center-board">
+        <div class="pile-area">
+          <button id="drawBtn" class="pile-button" type="button">
+            <span>Draw Pile</span>
+            <div class="deck-card card back-card"></div>
+            <small id="deckCount">0 cards</small>
+          </button>
+
+          <button id="discardBtn" class="pile-button" type="button">
+            <span>Discard Pile</span>
+            <div id="discardTop" class="deck-card"></div>
+            <small id="discardCount">0 cards</small>
+          </button>
+        </div>
+
+        <div class="turn-panel">
+          <div id="phasePill" class="phase-pill">Your Turn</div>
+          <p id="instruction">Choose the draw pile or discard pile.</p>
+          <div id="drawnArea" class="drawn-area"></div>
+          <div id="actionButtons" class="action-buttons"></div>
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <section class="mini-card check-card">
+          <h2>Cheating Check</h2>
+          <div id="checkPreview" class="check-rule-card" aria-live="polite"></div>
+        </section>
+        <section class="mini-card log-panel">
+          <h2>Game Log</h2>
+          <div id="log" class="log"></div>
+        </section>
+      </aside>
+
+      <section class="human-zone" aria-label="Your exam">
+        <div class="human-info">
+          <div class="avatar"><img src="assets/avatars/player1.jpg" alt="David"></div>
+          <div>
+            <strong>David</strong>
+            <span id="humanEstimate">Known Risk: 0</span>
+          </div>
+        </div>
+        <div id="humanCards" class="human-cards"></div>
+      </section>
+    </section>
+
+    <div class="teacher-walkway" aria-label="Female teacher patrol animation">
+      <svg class="female-teacher-svg" viewBox="0 0 260 260" aria-hidden="true">
+        <ellipse class="female-teacher-shadow" cx="122" cy="240" rx="72" ry="11"></ellipse>
+        <g class="female-teacher">
+          <g class="female-teacher-aura">
+            <path d="M57 65c11-31 41-50 77-47 39 3 64 29 67 67 3 39-14 66-35 85-25 23-67 20-94 1-26-18-37-58-15-106z"></path>
+          </g>
+          <g class="female-teacher-body">
+            <path class="female-coat-back" d="M76 236c7-56 27-84 58-84s51 28 58 84z"></path>
+            <path class="female-skirt" d="M102 192h66l14 44H88z"></path>
+            <path class="female-shirt" d="M108 235l17-72h27l18 72z"></path>
+            <path class="female-tie" d="M132 166h14l-4 20 10 49h-30l10-49z"></path>
+            <path class="female-neck" d="M121 142h31v22c-8 9-23 9-31 0z"></path>
+          </g>
+          <g class="female-leg left-leg">
+            <path d="M112 229l-12 27"></path>
+            <path d="M100 256h27"></path>
+          </g>
+          <g class="female-leg right-leg">
+            <path d="M158 229l12 27"></path>
+            <path d="M145 256h27"></path>
+          </g>
+          <g class="female-left-arm">
+            <path d="M91 169c-18 15-26 33-29 59"></path>
+            <circle cx="61" cy="231" r="9"></circle>
+          </g>
+          <g class="female-ruler-arm">
+            <path d="M170 169c24 2 40-9 56-31"></path>
+            <circle cx="226" cy="137" r="9"></circle>
+            <rect class="female-ruler" x="221" y="42" width="10" height="99" rx="3"></rect>
+            <path class="female-ruler-lines" d="M226 53h7M226 67h5M226 81h7M226 95h5M226 109h7M226 123h5"></path>
+          </g>
+          <g class="female-head">
+            <path class="female-hair-back" d="M69 83c2-46 33-75 74-72 40 3 69 34 65 82l-13 94c-17-12-32-21-53-21s-40 9-58 21z"></path>
+            <path class="female-face" d="M82 89c0-33 25-56 56-56s56 23 56 56c0 37-22 64-56 64S82 126 82 89z"></path>
+            <path class="female-bangs" d="M79 84c15-1 28-11 38-25 11 15 32 24 66 22-5-29-29-45-59-45-30 0-50 18-45 48z"></path>
+            <path class="female-ear left" d="M80 96c-12 2-14 23 1 27z"></path>
+            <path class="female-ear right" d="M193 96c12 2 14 23-1 27z"></path>
+            <g class="female-brow">
+              <path d="M104 96l27 8"></path>
+              <path d="M170 96l-27 8"></path>
+            </g>
+            <g class="female-glasses">
+              <path d="M97 108c7-10 28-10 34 0 2 17-27 22-34 0z"></path>
+              <path d="M145 108c7-10 28-10 34 0 2 17-27 22-34 0z"></path>
+              <path d="M132 108h12"></path>
+            </g>
+            <g class="female-eyes">
+              <path d="M111 109h14"></path>
+              <path d="M155 109h14"></path>
+            </g>
+            <path class="female-mouth" d="M124 135c10-8 26-8 36 0"></path>
+            <path class="female-glint" d="M101 105h36M145 105h36"></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div id="teacherQuestionBurst" class="teacher-question-burst" aria-hidden="true">
+      <span>?</span>
+      <span>?</span>
+      <span>?</span>
+    </div>
+    <audio id="bgMusic" src="assets/audio/hall-pass-hustle.mp3" loop preload="auto"></audio>
+    <audio id="cardClickSound" src="assets/audio/card-click.mp3" preload="auto"></audio>
+    <audio id="victorySound" src="assets/audio/victory.mp3" preload="auto"></audio>
+  </main>
+
+  <div id="shuffleOverlay" class="shuffle-overlay" hidden aria-label="Shuffling">
+    <div class="shuffle-stage" aria-hidden="true">
+      <div class="shuffle-card"></div>
+      <div class="shuffle-card"></div>
+      <div class="shuffle-card"></div>
+      <div class="shuffle-card"></div>
+      <div class="shuffle-card"></div>
+      <div class="shuffle-card"></div>
+    </div>
+  </div>
+
+  <dialog id="choiceDialog" class="dialog">
+    <form method="dialog">
+      <h2 id="dialogTitle">Choose</h2>
+      <p id="dialogText"></p>
+      <div id="dialogOptions" class="dialog-options"></div>
+    </form>
+  </dialog>
+
+  <dialog id="cardPreviewDialog" class="dialog card-preview-dialog">
+    <form method="dialog">
+      <h2 id="cardPreviewTitle">View Card</h2>
+      <p id="cardPreviewText"></p>
+      <div id="cardPreviewArea" class="card-preview-area"></div>
+      <button id="cardPreviewCloseBtn" class="primary wide" type="button">Got it</button>
+    </form>
+  </dialog>
+
+  <dialog id="coinDialog" class="dialog coin-dialog">
+    <form method="dialog">
+      <h2>Hall Monitor</h2>
+      <p id="coinIntro">Flip the coin: red means caught, green means safe.</p>
+      <div class="coin-stage">
+        <div id="coin" class="coin waiting" aria-hidden="true">
+          <span class="coin-face caught-face"></span>
+          <span class="coin-face clear-face"></span>
+        </div>
+        <div class="coin-rules">
+          <span class="coin-rule caught-rule">Caught +2 Risk</span>
+          <span class="coin-rule clear-rule">Safe -3 Risk</span>
+        </div>
+      </div>
+      <p id="coinResult" class="coin-result">Flip the coin to decide.</p>
+      <div class="coin-actions">
+        <button id="coinFlipBtn" class="gold wide" type="button">Flip Coin</button>
+        <button id="coinContinueBtn" class="primary wide" type="button" hidden>Continue</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="tutorialDialog" class="dialog tutorial-dialog">
+    <form method="dialog">
+      <div class="tutorial-head">
+        <span class="phase-pill">First Game</span>
+        <h2>Quick Guide</h2>
+        <p>You are taking a final exam. Your goal is not a high score. Your goal is the lowest risk.</p>
+      </div>
+
+      <div class="tutorial-grid">
+        <section class="tutorial-step">
+          <strong>1. How To Win</strong>
+          <p>At the end, add your 4 card values, Hall Monitor modifiers, and the Cheating Check penalty. The lowest Risk Score wins.</p>
+        </section>
+
+        <section class="tutorial-step">
+          <strong>2. Opening Memory</strong>
+          <p>You have 4 facedown cards. At the start, you know your first 2 cards. Cards marked “Known” are remembered.</p>
+        </section>
+
+        <section class="tutorial-step">
+          <strong>3. Your Turn</strong>
+          <p>First choose the draw pile or discard pile. If you take a 1-9 card, swap it into your hand or discard it.</p>
+        </section>
+
+        <section class="tutorial-step">
+          <strong>4. Skill Cards</strong>
+          <p>Cards 10-13 are skill cards: 10 peeks at your card, 11 peeks at another player, 12 swaps cards, and 13 flips a Hall Monitor coin. Red means caught +2, green means safe -3.</p>
+        </section>
+
+        <section class="tutorial-step">
+          <strong>5. Declare Done</strong>
+          <p>When your risk feels low enough, declare Done after your turn. Every other player gets one final turn, then scoring begins.</p>
+        </section>
+
+        <section class="tutorial-step">
+          <strong>6. Tip</strong>
+          <p>Replace high numbers with low numbers and remember your hidden cards. Low risk is great, but declaring too early gives AI a chance.</p>
+        </section>
+      </div>
+
+      <div class="tutorial-actions">
+        <button id="tutorialCloseBtn" class="primary wide" type="button">Start Exam</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="scoreDialog" class="dialog score-dialog">
+    <form method="dialog">
+      <h2 id="scoreTitle">Card Scores</h2>
+      <p id="finalCheck"></p>
+      <div id="victoryBanner" class="victory-banner" hidden>Victory!</div>
+      <button id="revealFinalBtn" class="skull-button" type="submit" value="revealFinal" aria-label="Reveal final scores">☠</button>
+      <div id="scoreRows" class="score-rows"></div>
+      <button id="playAgainBtn" class="primary wide" type="button">Play Again</button>
+    </form>
+  </dialog>
+
+  <script src="game.js?v=english-only-1"></script>
+</body>
+</html>
